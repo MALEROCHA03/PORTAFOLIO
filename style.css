@@ -1,0 +1,366 @@
+
+@import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap");
+body {
+ 
+  background: black;
+  background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	right: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 12px 12px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook {background-image: url("facebook.png");} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background-image: url("github.png")}
+	.social ul li .icon-googleplus {background-image: url("instagram.png")}
+	.social ul li .icon-pinterest {background-image: url("gmail.png")}
+	
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+.neons {
+  margin-top: 2rem;
+  text-align: left;
+  
+}
+
+.neons h1 {
+  font-size: 6rem;
+  text-align: left;
+  font-weight: bold;
+  -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+  -moz-animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  font-family: 'Codystar';
+  display:block;
+  justify-content: left;
+  align-items: left;
+  margin-block-end: 0rem;
+  
+}
+
+.neons h2 {
+  font-size: 2.7rem;
+  text-align: left;
+  font-weight: bold;
+  -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+  -moz-animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  font-family: 'Codystar';
+  display: block;
+  justify-content: left;
+  align-items: left;
+  margin-block-end: 4rem;
+}
+
+.neons h3 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+    -moz-animation: glow 1.5s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    font-family: 'Codystar';
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 2rem;
+  }
+
+@-webkit-keyframes glow {
+  from {
+    color: #e3f2fd;
+    text-shadow: 0 0 10px#61ace2, 0 0 20px #e3f2fd, 0 0 30px #e3f2fd, 0 0 40px #ffb3ff, 0 0 50px #ffb3ff, 0 0 60px #00fff2, 0 0 70px #ffb3ff, 0 0 90px #ffb3ff;
+  }
+  to {
+    color: white;
+    text-shadow: 0 0 20px #ffb3ff, 0 0 30px #ffb3ff, 0 0 40px #ffb3ff, 0 0 50px #ffb3ff, 0 0 60px #ffb3ff, 0 0 70px #ffb3ff
+    , 0 0 80px #ffb3ff, 0 1 90px #ffb3ff;
+  }
+}
+.img{
+    height: 30px;
+    width: 30px;
+    float:right;
+}
+.row{
+
+  margin-right: 0;
+  margin-left: 0;
+
+
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  
+ 
+  
+  /* Clearfix (clear floats) */
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+@media (max-width: 757x) { 
+  .neons h1 {
+    font-size: 2.5rem;
+  }
+  .neons h2 {
+      font-size: 1.5rem;
+  }
+  .neons h3 {
+    font-size: 1.5rem;
+    ;
+
+
+  }
+
+}
+  
+@media (max-width: 615px) {
+  .neons h1 {
+    font-size: 1.7rem;
+  }
+  .neons h2 {
+      font-size: 1rem;
+  }
+  .neons h3 {
+    font-size: 1.2rem;
+    ;
+
+
+  }
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+body{
+	height: 100%; 
+	font-family: 'Noto Sans', sans-serif;
+  
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: Black;
+  color: white;
+}
+
+.contact_form{	
+	width: 450px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #61ace2; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #61ace2; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #61ace2; 
+	border-color: #61ace2; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 100px;   
+  cursor: pointer;
+  
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #61ace2; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+h4{
+	font-size: 39px;  
+	text-align: center; 
+	padding-bottom: 20px; 
+	color: #61ace2;
+}
+
+
+h5{
+	font-size: 20px; 
+	padding-bottom: 30px;
+	color: #61ace2;   
+}
+/*botón up*/
+.boton-subir{
+  display: none;
+  background: #00974B;
+  border: thin solid #fff;
+  border-radius: 3px;
+  position: fixed;
+  right: 15px;
+  bottom:2px;
+  z-index: 999999999;
+}
+/*evento hover*/
+.boton-subir:hover{
+  box-shadow:   0px 2px 10px 0px rgba(255, 255, 255, 0.75);
+}
+/*estilos para el tag i*/
+.boton-subir i{
+  color: #fff;
+  font-size: 1.5em;
+  padding: 10px 10px 10px 7px;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+p{
+	font-size: 14px; 
+	color: white; 
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+@media (max-width: 615px){
+  .contact_form{	
+	width: 250px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 20px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 208px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #61ace2; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 10px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 205px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #61ace2; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 5px; 
+}
+
+h4{
+
+  font-size: 25px; 
+ 
+}
